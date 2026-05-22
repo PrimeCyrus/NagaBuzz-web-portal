@@ -10,10 +10,10 @@ let currentStep = 1;
 const deletionRegistryKey = 'nagabuzz_deletion_registry';
 
 // Initialize Supabase Client using standard window lookup
-let supabase = null;
+let supabaseClient = null;
 try {
     if (typeof window.supabase !== 'undefined') {
-        supabase = window.supabase.createClient(
+        supabaseClient = window.supabase.createClient(
             'https://nfcrresliskxiowbzldc.supabase.co',
             'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5mY3JyZXNsaXNreGlvd2J6bGRjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzg4NzExMTQsImV4cCI6MjA5NDQ0NzExNH0.NDZyrVdEcIR11IsLQlzKbZFfVv5T-BqcSxbe2_h7i8Q'
         );
@@ -266,17 +266,6 @@ function setupScopeCards() {
                 card.classList.remove('selected');
             }
 
-            // Click listener
-            card.addEventListener('click', (e) => {
-                if (checkbox.disabled) return; // Core credentials required
-                // Prevent duplicate trigger if clicking the box label directly
-                if (e.target.tagName !== 'INPUT') {
-                    checkbox.checked = !checkbox.checked;
-                    // Trigger custom change event representation
-                    checkbox.dispatchEvent(new Event('change'));
-                }
-            });
-
             checkbox.addEventListener('change', () => {
                 if (checkbox.checked) {
                     card.classList.add('selected');
@@ -408,7 +397,7 @@ function runConsoleSimulation(userEmail) {
     let supabaseWriteSuccess = false;
     let supabaseLogMsg = '[SUPABASE] Live database connection initialized.';
 
-    if (supabase) {
+    if (supabaseClient) {
         const payload = {
             ticket_id: ticketId,
             email: userEmail,
@@ -421,7 +410,7 @@ function runConsoleSimulation(userEmail) {
         };
 
         // Asynchronously insert row into deletion_requests table
-        supabase.from('deletion_requests').insert([payload]).then(response => {
+        supabaseClient.from('deletion_requests').insert([payload]).then(response => {
             if (response.error) {
                 console.warn('Supabase insertion error details:', response.error);
                 if (response.error.message && response.error.message.includes('relation "public.deletion_requests" does not exist')) {
