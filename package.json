@@ -1,0 +1,11 @@
+{
+  "name": "nagabuzz-web-portal",
+  "version": "1.0.0",
+  "description": "NagaBuzz Privacy Policy & Account Deletion Portal",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx -y http-server . -p 8080"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

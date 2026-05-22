@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NagaBuzz Portal | Privacy Policy & Account Deletion</title>
+    <meta name="description" content="Official NagaBuzz support portal for viewing the Privacy Policy, Terms, and submitting secure data or account deletion requests.">
+    <!-- Google Fonts: Outfit for heading & text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Vanilla CSS Style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <!-- Ambient Background Glows -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="ambient-glow glow-3"></div>
+
+    <div class="portal-container">
+        <!-- Header -->
+        <header class="portal-header">
+            <div class="logo-area">
+                <div class="logo-icon">🐝</div>
+                <div class="logo-text">
+                    <span class="logo-title">Naga<span class="highlight">Buzz</span></span>
+                    <span class="logo-subtitle">Nagaland News & Notice Hub</span>
+                </div>
+            </div>
+            <nav class="portal-nav">
+                <button id="btn-tab-privacy" class="nav-tab active" onclick="switchTab('privacy')">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    Privacy Policy
+                </button>
+                <button id="btn-tab-deletion" class="nav-tab" onclick="switchTab('deletion')">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M10 11v6M14 11v6"/></svg>
+                    Account Deletion
+                </button>
+            </nav>
+            <div class="actions-area">
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Dark/Light Mode">
+                    <!-- Light Mode Icon (Sun) -->
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                    <!-- Dark Mode Icon (Moon) -->
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+            </div>
+        </header>
+
+        <!-- Main Portal Workspace -->
+        <main class="portal-main">
+
+            <!-- TAB 1: PRIVACY POLICY -->
+            <section id="section-privacy" class="tab-content active-content">
+                <div class="search-hero">
+                    <div class="hero-content">
+                        <h1>NagaBuzz Privacy Policy</h1>
+                        <p class="subtitle">Effective Date: May 23, 2026. Transparent explanation of how we collect, store, and secure your data.</p>
+                    </div>
+                    <div class="search-box-wrapper">
+                        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                        <input type="text" id="policy-search" placeholder="Search privacy terms (e.g. Supabase, comments, credentials)..." aria-label="Search Privacy Policy text">
+                        <button id="clear-search-btn" class="clear-search-btn" aria-label="Clear search">×</button>
+                    </div>
+                </div>
+
+                <div class="policy-layout">
+                    <!-- Sidebar navigation index -->
+                    <aside class="policy-sidebar">
+                        <div class="sidebar-card">
+                            <h3>Document Sections</h3>
+                            <ul class="sidebar-links">
+                                <li><a href="#intro" class="sidebar-link active">1. Overview & Scope</a></li>
+                                <li><a href="#data-collection" class="sidebar-link">2. Data Collection</a></li>
+                                <li><a href="#supabase-firebase" class="sidebar-link">3. Backend & Storage</a></li>
+                                <li><a href="#data-usage" class="sidebar-link">4. How We Use Data</a></li>
+                                <li><a href="#user-rights" class="sidebar-link">5. Your Control & Deletion</a></li>
+                                <li><a href="#policy-updates" class="sidebar-link">6. Changes to Policy</a></li>
+                                <li><a href="#contact" class="sidebar-link">7. Contact Support</a></li>
+                            </ul>
+                        </div>
+                    </aside>
+
+                    <!-- Main policy content text -->
+                    <article class="policy-text-area" id="policy-body">
+                        <!-- Section 1 -->
+                        <section id="intro" class="policy-section">
+                            <h2>1. Overview & Scope</h2>
+                            <p>Welcome to <strong>NagaBuzz</strong> ("we", "our", "us"), the premier news, bulletin board, and localized discussion platform designed specifically for residents across all districts of Nagaland, including Kohima, Dimapur, Mokokchung, Mon, and beyond. We are dedicated to providing a fast, engaging, and transparent environment that keeps you connected to local updates.</p>
+                            <p>Your privacy is of vital importance to us. This Privacy Policy details the types of information NagaBuzz collects from its users, how we handle that information using our modern cloud architectures, and the robust controls we provide you to access or permanently delete your profile data at any time.</p>
+                        </section>
+
+                        <!-- Section 2 -->
+                        <section id="data-collection" class="policy-section">
+                            <h2>2. Data Collection</h2>
+                            <p>To enable personalization and community communication, NagaBuzz collects specific items of data. This falls under three categories:</p>
+                            
+                            <h3>A. Personal Account Credentials</h3>
+                            <p>When you register or sign in, we process information received from identity providers (e.g. <strong>Google Sign-In</strong> or Firebase Authentication). This includes:</p>
+                            <ul>
+                                <li>Your registered email address</li>
+                                <li>Your display name / username</li>
+                                <li>Your profile picture/avatar (used as identifiers on comment threads)</li>
+                            </ul>
+
+                            <h3>B. User Generated Content (UGC)</h3>
+                            <p>NagaBuzz is a collaborative community platform. We securely store content you explicitly contribute, including:</p>
+                            <ul>
+                                <li><strong>Public Comments</strong>: Comments you submit beneath news articles, including timestamps and avatar links.</li>
+                                <li><strong>Notice Board Listings</strong>: Community announcements, job alerts, local examinations, and scholarship updates that you submit to the board.</li>
+                                <li><strong>Interactions</strong>: Article likes, view histories, and district-level feed filters (e.g., selecting Dimapur as your primary viewing district).</li>
+                            </ul>
+
+                            <h3>C. Technical & Diagnostic Logs</h3>
+                            <p>Our app processes system information to resolve crashes and protect our service. This contains device indicators, network types, and platform types (iOS/Android).</p>
+                        </section>
+
+                        <!-- Section 3 -->
+                        <section id="supabase-firebase" class="policy-section">
+                            <h2>3. Backend Infrastructure & Storage</h2>
+                            <p>To deliver real-time comments, bullet-proof notice updates, and high-performance video playing, NagaBuzz implements state-of-the-art secure cloud database integrations:</p>
+                            
+                            <div class="info-grid">
+                                <div class="info-card">
+                                    <div class="card-icon">⚡</div>
+                                    <h4>Supabase Realtime Database</h4>
+                                    <p>Used to sync news articles, comments, likes, and district lists. Data is structured, index-optimized, and hosted in regional enterprise-grade databases protected by row-level security (RLS).</p>
+                                </div>
+                                <div class="info-card">
+                                    <div class="card-icon">🔐</div>
+                                    <h4>Firebase Authentication</h4>
+                                    <p>Manages user signup, session tokens, and authentication states. Your private passwords never touch our servers; instead, secure tokenized handshakes keep you safe.</p>
+                                </div>
+                            </div>
+                            <p>All database instances are continuously audited and configured with restricted access nodes to prevent leaks, breaches, or unauthorized credential exposure.</p>
+                        </section>
+
+                        <!-- Section 4 -->
+                        <section id="data-usage" class="policy-section">
+                            <h2>4. How We Use Your Data</h2>
+                            <p>NagaBuzz does <strong>NOT</strong> sell, lease, or distribute your personal details to advertising networks or third-party brokers. Your data is used exclusively to power the following core application experiences:</p>
+                            <ol>
+                                <li><strong>Personalized Local Feeds</strong>: Filtering jobs, exam results, and breaking news relevant to your preferred Nagaland district.</li>
+                                <li><strong>Interactive Conversations</strong>: Enabling you to post comments, voice opinions, and upvote constructive discussions underneath headlines.</li>
+                                <li><strong>Community Integrity</strong>: Moderating comment boards and verify submissions to prevent spam, scams, or illegal notice postings.</li>
+                                <li><strong>Video Streaming</strong>: Adapting bandwidth feeds for high-fidelity YouTube and embedded video players within articles.</li>
+                            </ol>
+                        </section>
+
+                        <!-- Section 5 -->
+                        <section id="user-rights" class="policy-section">
+                            <h2>5. Your Control & Account Deletion</h2>
+                            <p>Under global privacy guidelines and modern App Store rules, you retain absolute ownership over your personal data. You have the right to request access to, correct, or completely delete your digital footprints.</p>
+                            <div class="warning-alert">
+                                <strong>Important notice about Deletion:</strong>
+                                When you submit an Account Deletion Request, NagaBuzz queues a complete wipe of your user record from both Firebase Auth and the Supabase database. This includes your profile details, avatar linkages, likes, and notices. You have a 30-day grace period where you can cancel the request by contacting us, after which the wipe is 100% irreversible.
+                            </div>
+                            <p>You can trigger this action directly by clicking the <strong>"Account Deletion"</strong> tab in the navigation bar above and filling out our secure digital request wizard.</p>
+                        </section>
+
+                        <!-- Section 6 -->
+                        <section id="policy-updates" class="policy-section">
+                            <h2>6. Changes to This Privacy Policy</h2>
+                            <p>We may update our Privacy Policy periodically to reflect new features or security standards. We will notify you of any major adjustments by placing a prominent notice on the NagaBuzz home screen or updating the version date at the top of this website. We encourage you to review this portal occasionally to remain informed.</p>
+                        </section>
+
+                        <!-- Section 7 -->
+                        <section id="contact" class="policy-section">
+                            <h2>7. Contact Support & Compliance</h2>
+                            <p>For questions regarding our Privacy Policy, data storage mechanisms, or to cancel a pending account deletion ticket, please reach out to our dedicated data compliance desk:</p>
+                            <div class="contact-details">
+                                <p><strong>Email:</strong> <a href="mailto:support@enzlabs.com">support@enzlabs.com</a></p>
+                                <p><strong>Entity:</strong> EnzLabs Developers, Dimapur, Nagaland</p>
+                                <p><strong>Typical Response Time:</strong> Within 24-48 business hours</p>
+                            </div>
+                        </section>
+                    </article>
+                </div>
+            </section>
+
+
+            <!-- TAB 2: ACCOUNT DELETION REQUEST -->
+            <section id="section-deletion" class="tab-content">
+                <div class="deletion-hero">
+                    <h2>NagaBuzz Account Deletion Portal</h2>
+                    <p>Submit a secure request to permanently remove your user account and erase all associated digital footprints from the NagaBuzz ecosystem, complying with Google Play Data Safety policies.</p>
+                </div>
+
+                <div class="deletion-wizard-card">
+                    <!-- Progress bar -->
+                    <div class="wizard-progress-bar">
+                        <div class="progress-step active" id="progress-step-1">
+                            <span class="step-num">1</span>
+                            <span class="step-name">Identify</span>
+                        </div>
+                        <div class="progress-step" id="progress-step-2">
+                            <span class="step-num">2</span>
+                            <span class="step-name">Scope</span>
+                        </div>
+                        <div class="progress-step" id="progress-step-3">
+                            <span class="step-num">3</span>
+                            <span class="step-name">Confirm</span>
+                        </div>
+                        <div class="progress-step" id="progress-step-4">
+                            <span class="step-num">4</span>
+                            <span class="step-name">Done</span>
+                        </div>
+                    </div>
+
+                    <!-- Step Cards Container -->
+                    <div class="wizard-steps-container">
+                        
+                        <!-- STEP 1: IDENTIFY USER -->
+                        <div class="wizard-step-pane active-pane" id="pane-step-1">
+                            <h3>Verify Your Identity</h3>
+                            <p class="pane-description">Please enter the exact email address and account details associated with your NagaBuzz profile so we can locate your record.</p>
+                            
+                            <form id="form-deletion-identity" onsubmit="event.preventDefault(); nextStep(2);">
+                                <div class="form-group">
+                                    <label for="input-email">Registered Email Address <span class="required">*</span></label>
+                                    <input type="email" id="input-email" required placeholder="name@example.com" autocomplete="email">
+                                    <span class="input-tip">Must match the email you use to sign in via Google or Custom email.</span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="input-username">Display Name or User ID (Optional)</label>
+                                    <input type="text" id="input-username" placeholder="e.g. Naga_Voice">
+                                    <span class="input-tip">Helps us accurately verify your account ownership.</span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="select-auth">How do you sign in to NagaBuzz? <span class="required">*</span></label>
+                                    <select id="select-auth" required>
+                                        <option value="" disabled selected>Select authentication method</option>
+                                        <option value="google">Google Authentication (Recommended)</option>
+                                        <option value="email">Custom Email & Password</option>
+                                        <option value="other">Other / I don't remember</option>
+                                    </select>
+                                </div>
+                                <div class="form-actions">
+                                    <span></span>
+                                    <button type="submit" class="btn btn-primary">
+                                        Continue
+                                        <svg class="btn-icon-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- STEP 2: SCOPE OF DELETION -->
+                        <div class="wizard-step-pane" id="pane-step-2">
+                            <h3>Choose Deletion Scope</h3>
+                            <p class="pane-description">You can choose to delete your entire user profile or select specific categories of data. All choices require a 30-day wait period before final purge.</p>
+                            
+                            <form id="form-deletion-scope" onsubmit="event.preventDefault(); nextStep(3);">
+                                <div class="scope-cards-grid">
+                                    <!-- Card 1 -->
+                                    <label class="scope-card selected">
+                                        <input type="checkbox" checked disabled id="check-profile">
+                                        <div class="scope-card-content">
+                                            <span class="scope-title">Core Account Credentials</span>
+                                            <p class="scope-desc">Deletes your email association, login token keys, avatar profile image, and username credentials. Wipes core record from Firebase Auth.</p>
+                                            <span class="badge badge-required">Required</span>
+                                        </div>
+                                    </label>
+                                    <!-- Card 2 -->
+                                    <label class="scope-card">
+                                        <input type="checkbox" checked id="check-comments">
+                                        <div class="scope-card-content">
+                                            <span class="scope-title">Public Comment Threads</span>
+                                            <p class="scope-desc">Permanently purges all comments you left on local news articles across Kohima, Dimapur, Mokokchung, etc., from Supabase.</p>
+                                            <span class="badge">Optional</span>
+                                        </div>
+                                    </label>
+                                    <!-- Card 3 -->
+                                    <label class="scope-card">
+                                        <input type="checkbox" checked id="check-notices">
+                                        <div class="scope-card-content">
+                                            <span class="scope-title">Notice Board Submissions</span>
+                                            <p class="scope-desc">Deletes job openings, academic alerts, and scholarship board items you published as a community organizer.</p>
+                                            <span class="badge">Optional</span>
+                                        </div>
+                                    </label>
+                                    <!-- Card 4 -->
+                                    <label class="scope-card">
+                                        <input type="checkbox" checked id="check-logs">
+                                        <div class="scope-card-content">
+                                            <span class="scope-title">Activity Logs & Feed Metrics</span>
+                                            <p class="scope-desc">Wipes your local bookmarks, article read states, likes, and district filter cookies from system analytics.</p>
+                                            <span class="badge">Optional</span>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="form-actions">
+                                    <button type="button" class="btn btn-secondary" onclick="prevStep(1)">
+                                        <svg class="btn-icon-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+                                        Back
+                                    </button>
+                                    <button type="submit" class="btn btn-primary">
+                                        Review Warning
+                                        <svg class="btn-icon-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- STEP 3: WARNING & FINAL CONFIRMATION -->
+                        <div class="wizard-step-pane" id="pane-step-3">
+                            <h3>Final Warning & Irreversibility</h3>
+                            
+                            <div class="red-alert-banner">
+                                <div class="alert-icon">⚠️</div>
+                                <div class="alert-body">
+                                    <h4>This action cannot be undone!</h4>
+                                    <p>Once the 30-day cooling-off period expires, your accounts in Supabase and Firebase are permanently wiped. Any comments, local scores, or active notices will be deleted forever and cannot be recovered by any customer support agent.</p>
+                                </div>
+                            </div>
+
+                            <form id="form-deletion-confirm" onsubmit="event.preventDefault(); submitDeletionRequest();">
+                                <div class="form-group check-agreement">
+                                    <label class="checkbox-label-wrapper">
+                                        <input type="checkbox" id="confirm-agreement" required>
+                                        <span class="checkbox-custom"></span>
+                                        <span class="agreement-text">I explicitly confirm that I want to delete the selected assets and I understand that this request is final.</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="input-email-confirm">Please re-type your registered email address to authorize: <span class="required">*</span></label>
+                                    <input type="email" id="input-email-confirm" required placeholder="Confirm email address" autocomplete="off">
+                                    <span id="confirm-email-error" class="error-msg">Emails do not match. Please verify.</span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="select-reason">Reason for deletion (Helps us improve NagaBuzz)</label>
+                                    <select id="select-reason">
+                                        <option value="none" selected>Select a reason (optional)</option>
+                                        <option value="privacy">Privacy concerns</option>
+                                        <option value="unused">No longer using the app</option>
+                                        <option value="errors">Encountered application bugs / errors</option>
+                                        <option value="other">Other reason</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-actions">
+                                    <button type="button" class="btn btn-secondary" onclick="prevStep(2)">
+                                        <svg class="btn-icon-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+                                        Back
+                                    </button>
+                                    <button type="submit" class="btn btn-danger">
+                                        Authorize & Delete Account
+                                        <svg class="btn-icon-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 7l-.867 12.142A2 2 0 0 1 16.138 21H7.862a2 2 0 0 1-1.995-1.858L5 7m5 4v6m4-16v1a2 2 0 0 1-2 2H12a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2z"/></svg>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- STEP 4: SECURE PROCESSING LOAD -->
+                        <div class="wizard-step-pane loading-pane" id="pane-step-4">
+                            <div class="spinner-container">
+                                <div class="spinner-ring">
+                                    <div class="glowing-orb"></div>
+                                </div>
+                                <div class="spinner-pulse"></div>
+                            </div>
+                            <h3>Transmitting Secure Request</h3>
+                            <p class="processing-subtitle" id="processing-status">Establishing encrypted handshake with EnzLabs auth database...</p>
+                            <div class="simulation-console" id="console-logs">
+                                <div>[CONNECT] Initializing HTTPS connection to gateway...</div>
+                            </div>
+                        </div>
+
+                        <!-- STEP 5: SUCCESS STATE -->
+                        <div class="wizard-step-pane success-pane" id="pane-step-5">
+                            <div class="success-icon-wrapper">
+                                <svg class="checkmark-svg" viewBox="0 0 52 52">
+                                    <circle class="checkmark-circle" cx="26" cy="26" r="25" fill="none"/>
+                                    <path class="checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                                </svg>
+                            </div>
+                            <h3>Request Registered Successfully</h3>
+                            <p class="success-desc">We have registered your deletion request. An identity authentication email was sent to your registered account containing the authorization link to approve final deletion.</p>
+
+                            <!-- Receipt details card -->
+                            <div class="receipt-card">
+                                <div class="receipt-header">
+                                    <span>NAGA-BUZZ DATA AUDIT DEPT</span>
+                                    <span class="badge badge-pending">PENDING CONFIRMATION</span>
+                                </div>
+                                <div class="receipt-body">
+                                    <div class="receipt-row">
+                                        <span class="label">Reference Ticket</span>
+                                        <span class="value ticket-code" id="ticket-id">NB-DEL-XXXXXX</span>
+                                    </div>
+                                    <div class="receipt-row">
+                                        <span class="label">Primary Identity</span>
+                                        <span class="value" id="receipt-email">name@example.com</span>
+                                    </div>
+                                    <div class="receipt-row">
+                                        <span class="label">Auth Provider</span>
+                                        <span class="value" id="receipt-auth">Google Identity</span>
+                                    </div>
+                                    <div class="receipt-row">
+                                        <span class="label">Assets Queued</span>
+                                        <span class="value" id="receipt-scope">Profile, Comments, notices, logs</span>
+                                    </div>
+                                    <div class="receipt-row">
+                                        <span class="label">Grace Period Ends</span>
+                                        <span class="value date" id="receipt-grace">June 22, 2026</span>
+                                    </div>
+                                </div>
+                                <div class="receipt-footer">
+                                    To cancel this deletion request, contact <a href="mailto:support@enzlabs.com">support@enzlabs.com</a> citing the reference ticket before the grace period expires.
+                                </div>
+                            </div>
+
+                            <div class="success-actions">
+                                <button type="button" class="btn btn-secondary" onclick="window.print();">
+                                    <svg class="btn-icon-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+                                    Print Receipt
+                                </button>
+                                <button type="button" class="btn btn-primary" onclick="resetWizard()">
+                                    Submit Another Request
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Compliance & Links Footer -->
+        <footer class="portal-footer">
+            <div class="footer-sections-wrapper">
+                <div class="footer-brand">
+                    <span class="brand-title">Naga<span class="highlight">Buzz</span></span>
+                    <p class="brand-text">The official information network, keeping Dimapur, Kohima, and all districts connected with integrity, speed, and real-time community integration.</p>
+                </div>
+                <div class="footer-links-section">
+                    <h4>Direct Audits</h4>
+                    <ul>
+                        <li><a href="#intro" onclick="switchTab('privacy')">Privacy Policy</a></li>
+                        <li><a href="#section-deletion" onclick="switchTab('deletion')">Data Deletion</a></li>
+                        <li><a href="mailto:support@enzlabs.com">Support Center</a></li>
+                    </ul>
+                </div>
+                <div class="footer-compliance">
+                    <h4>App Compliance</h4>
+                    <div class="compliance-badges">
+                        <span class="comp-badge">
+                            <span class="badge-dot dot-green"></span> Google Play Compliant
+                        </span>
+                        <span class="comp-badge">
+                            <span class="badge-dot dot-green"></span> Firebase Secured
+                        </span>
+                        <span class="comp-badge">
+                            <span class="badge-dot dot-purple"></span> Supabase Connected
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="footer-bottom">
+                <p>&copy; 2026 EnzLabs Developers. All rights reserved. Registered under Indian Data Security Regulations.</p>
+                <div class="bottom-links">
+                    <a href="#section-privacy" onclick="switchTab('privacy')">Terms of Service</a>
+                    <span>&middot;</span>
+                    <a href="#section-privacy" onclick="switchTab('privacy')">Privacy Policy</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Supabase JS Client -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <!-- Script file containing page logic -->
+    <script src="app.js"></script>
+</body>
+</html>
